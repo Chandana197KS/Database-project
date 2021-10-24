@@ -1,0 +1,64 @@
+Create table player
+(
+      Player_id int,
+      Pname varchar(20),
+      Skill varchar(30)
+);
+Create table team
+(
+      Tname varchar(20),
+      Cups varchar(20),
+      T_id  int,
+     Members int,
+     Score int,
+      Jersey_number int,
+      C_id int
+);
+
+
+
+
+Create table match
+( 
+    M_id int,
+    M_date date,
+    M_venue varchar(50),
+    M_time time,
+    Innings int
+);
+Create table coach 
+(
+     C_id int,
+     Cname varchar(20),
+     C_experience int,
+     C_type varchar(20),
+     C_description varchar(20)
+);
+Create table sponser 
+(
+    Sname varchar(20),
+    S_id int,
+    Sponser_amt int
+);
+Create table captain 
+(
+    Cap_id int,
+    Cap_name varchar(20),
+    T_id int
+);
+
+Create table match_team
+(
+ M_id int,
+T_id int,
+);
+Create table sponser_team 
+(
+  S_id int,
+Player_id int
+);
+Create table player_team
+(
+ Player_id int,
+Team int
+);

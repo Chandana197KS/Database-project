@@ -1,0 +1,37 @@
+<html>
+
+<head>
+<style>
+    body {
+      background-image: url(http://localhost/project/IMG-20191129-WA0004.jpg) ;  
+       background-position:100% 85%;
+     background-repeat: no-repeat; 
+     background-attachment: fixed;
+     background-size: cover;
+    position: relative;
+}
+b,h1{ text-decoration: none;
+  color: #ffffff;
+}
+</style>
+</head>
+
+<center>
+<h1> Match </h1>
+<table border=1>
+<form action='match1.php' method='post'>
+<tr><td><font  color=white><b>Match_id</td><td><input type=text name=mid required></input></td>   </tr>
+<tr><td><font  color=white><b>Match_date</td><td><input type=text name=mdate required></input></td>   </tr>
+<tr><td><font  color=white><b>Match_venue</td><td><input type=text name=mvenue required></input></td>   </tr>
+<tr><td><font  color=white><b>Match_time</td><td><input type=text name=mtime required></input></td>   </tr>
+<tr><td><font  color=white><b>Match_innings</td><td><input type=text name=innings required></input></td>   </tr>
+<tr><td></td><td><input type=submit></input></td>   </tr>
+
+</form>
+<form action='retrievematch.php' method='post'>
+<tr><td></td><td><input type=submit value=retrieve></input></td>   </tr>
+
+</form>
+</table>
+</center>
+</html>
